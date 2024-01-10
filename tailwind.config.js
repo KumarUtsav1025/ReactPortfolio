@@ -12,6 +12,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      width: {
+        '48/100': '48%',
+        '88':'22rem'
+      },
+      height: {
+        '48/100': '48%',
+        '88':'22rem'
+      },
+    },
+    fontFamily: {
+      signature: ["Rubik Doodle Shadow"],
+      karla: ["karla", "sans"],
+      bebas: ["Anton", "sans-serif"],
     },
   },
   plugins: [],
