@@ -41,6 +41,7 @@ const ContactForm = () => {
 
     // Here you can use formData to save to a database or perform other actions
     console.log('Form Data:', formData);
+    addMessage(formData);
 
     // Reset form after submission
     setFormData({
@@ -64,6 +65,29 @@ const ContactForm = () => {
 
   const handleSnackbarClose = () => {
     setOpenSnackbar(false);
+  };
+
+  const addMessage = async (formData) => {
+    const urlEncodedFormData = new URLSearchParams(formData);
+    await fetch('https://utility-backend-d0yk.onrender.com/api/message', {
+       method: 'POST',
+       body: urlEncodedFormData,
+       headers: {
+          'Content-type': 'application/x-www-form-urlencoded',
+       },
+    })
+        .then((response) => {
+          if (response.ok) {
+            console.log('Form submitted successfully!');
+            // Additional success handling if needed
+          } else {
+            console.log('Form submission failed.');
+            // Handle error cases
+          }
+        })
+       .catch((err) => {
+          console.log(err.message);
+       });
   };
 
   return (
