@@ -76,8 +76,8 @@ const ContactForm = () => {
           'Content-type': 'application/x-www-form-urlencoded',
        },
     })
-        .then((response) => {
-          if (response.ok) {
+    .then((response) => {
+          if (response.status==200) {
             console.log('Form submitted successfully!');
             // Additional success handling if needed
           } else {
