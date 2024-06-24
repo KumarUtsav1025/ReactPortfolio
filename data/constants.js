@@ -241,7 +241,7 @@ export const projects = [
       "Machine Learning",
       "Natural Language Processing"
     ],
-    github: "https://github.com/KumarUtsav1025/youtube-sentiment-extension"
+    github: "https://github.com/KumarUtsav1025/youtube_sentiment_extension"
   },
   {
     id: 1,
