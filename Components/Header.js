@@ -39,9 +39,6 @@ const Header = () => {
   return (
     <div className='flex justify-between items-center w-full h-20 px-4 z-20
       text-white bg-white-300 backdrop-filter backdrop-blur-sm bg-opacity-30 fixed'>
-        <div>
-          <h1 className='text-5xl font-signature'>Portfolio</h1>
-        </div>
 
         <ul className='hidden md:flex'>
           {links.map((link) => (

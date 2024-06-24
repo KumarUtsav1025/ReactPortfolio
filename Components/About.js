@@ -32,8 +32,8 @@ const About = () => {
                                 " Flutter Developer",
                                 " Django Developer",
                                 " ML Enthusiast",
-                                // " NodeJs Developer",
-                                " ReactJs Developer"
+                                " ExpressJs Developer",
+                                // " ReactJs Developer"
                             ],
                             autoStart : true,
                             loop: true,
