@@ -11,7 +11,7 @@ import TypeWriter from 'typewriter-effect';
 const About = () => {
     const handleDownload = () => {
 
-        const googleDriveFileUrl = 'https://drive.google.com/file/d/1xEkVFFBleN1mAXBOgUV6CB0k9EMuto6W/view?usp=sharing';
+        const googleDriveFileUrl = 'https://drive.google.com/file/d/1BevmSQNBXEt2HLoglPgc6eo1F_nxvRxE/view?usp=sharing';
         window.open(googleDriveFileUrl, '_blank');
       };
 
